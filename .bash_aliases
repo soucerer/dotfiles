@@ -1,0 +1,14 @@
+alias gome="cd /mnt/c/Users/rsoucy"
+alias godev="cd /mnt/c/Users/rsoucy/mygithub/dev"
+alias gosites="cd /mnt/c/Users/rsoucy/Sites"
+alias inst="sudo apt-get install"
+alias labur365="cd /mnt/c/Users/rsoucy/Sites/labur-1"
+alias py="python"
+alias script_notes="vim /mnt/c/Users/rsoucy/dev/script_notes.txt"
+alias cd~='cd ~'
+alias ~~='cd ~' 
+alias ..='cd ..'
+alias cd..='cd ..'
+alias mygit="cd mnt/c/Users/rsoucy/Documents"
+alias docs="cd mnt/c/Users/rsoucy/Documents"
+alias desk="cd mnt/c/Users/rsoucy/Desktop"
