@@ -1,0 +1,15 @@
+#ignore files from mybash.git
+
+#backups
+*.bak
+*.swp
+*~
+
+#histories
+*_history
+
+#temp files
+*.tmp
+
+#info files
+.viminfo
