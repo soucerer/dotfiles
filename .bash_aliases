@@ -9,6 +9,3 @@ alias cd~='cd ~'
 alias ~~='cd ~' 
 alias ..='cd ..'
 alias cd..='cd ..'
-alias mygit="cd mnt/c/Users/rsoucy/Documents"
-alias docs="cd mnt/c/Users/rsoucy/Documents"
-alias desk="cd mnt/c/Users/rsoucy/Desktop"

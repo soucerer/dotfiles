@@ -1,11 +1,17 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/bin:/usr/games:/sbin"
+
+plugins=(git colored-man-pages fasd tmux tmuxinator)
 #set 256-color term
 export TERM="xterm-256color"
 
 # Path to your oh-my-zsh installation.
   export ZSH=/home/rsoucy/.oh-my-zsh
+
+  prmptcmd() {eval "$PROMPT_COMMAND" }
+  precmd_functions=(prmtcmd)
+  PROMPT_COMMAND='ConEmuC -StoreCWD'
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -71,10 +77,10 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colored-man-pages)
 
 source $ZSH/oh-my-zsh.sh
 
+eval "$(fasd --init auto)"
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -103,5 +109,11 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias node="nodejs"
+
+
+
+#source Aliases
+[ -f .zshAliases ] && source .zshAliases
+
+
 export DISPLAY=:0

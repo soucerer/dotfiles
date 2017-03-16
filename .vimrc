@@ -15,6 +15,7 @@
             Plug 'tpope/vim-surround'
             Plug 'scrooloose/nerdcommenter'
             Plug 'ryanoasis/vim-devicons'
+            Plug 'leafgarland/typescript-vim'
     call plug#end()
 
 "-----------Plugin-specific settings------------------------

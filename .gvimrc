@@ -22,3 +22,4 @@ colorscheme random
 "---------Shortcuts------------------------
     " change to random colorscheme
     nnoremap <leader>c :colo random<CR>
+

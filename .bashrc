@@ -64,8 +64,10 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-PS1='${debian_chroot:+($debian_chroot)} \e[94;44m$(printf "%*s" $(($(tput cols)-24)) "" | sed "s/ /─/g")\e[m\e[94;44m[\d|\t]  \e[m\r\e[94;44m\u@\h:\e[m\e[30;104m\w\e[m\n\e[94;44m=>\e[m '
-#    PS1='${debian_chroot:+($debian_chroot)}\[\e[30;46m]You are here->[\e[m\]\e[1;36m \w\e[m\n\e[1;32m\u@\h~\$ \e[m'
+#PS1='${debian_chroot:+($debian_chroot)} \e[94;44m$(printf "%*s" $(($(tput cols)-24)) "" | sed "s/ /─/g")\e[m\e[94;44m[\d|\t]  \e[m\r\e[94;44m\u@\h:\e[m\e[30;104m\w\e[m\n\e[94;44m=>\e[m '
+#PS1='${debian_chroot:+($debian_chroot)}\[\e[30;46m]You are here->[\e[m\]\e[1;36m \w\e[m\n\e[1;32m\u@\h~\$ \e[m'
+PS1='${debian_chroot:+($debian_chroot)}\u~\$ '
+
 
 else
     PS1='${debian_chroot:+($debian_chroot)}You are here->\w\n\u@\h~\$ '
